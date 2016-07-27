@@ -1,14 +1,10 @@
-<% provide(:title, "Home")%>
-
-<!DOCTYPE html>
-<html>
-<head>
-<title> <%= yield(:title) %> | Master_app</title>
-</head>
-<body>
+<div class="center jumbotron">
+  
 
 <h1>WELCOME TO THE DESIGNERS WORLD</h1>
-<p>Let's explore more
-</p>
-</body>
-</html>
+<h2>Let's explore more
+</h2>
+<%= link_to "Sign up now!", '#', class: "btn btn-lg btn-primary" %>
+</div>
+
+<%= image_tag("quote.jpg", alt: "Rails logo") %>
