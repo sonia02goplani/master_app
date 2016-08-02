@@ -1,12 +1,12 @@
 Rails.application.routes.draw do
-get '/signup' , to: 'users#new'
-get '/about' , to: 'staticpages#about'
-get '/help' , to: 'staticpages#help' 
-get '/contact' , to: 'staticpages#contact'
-get '/' , to: 'staticpages#home'
-
+get '/signup'   , to: 'users#new'
+get '/about'    , to: 'staticpages#about'
+get '/help'     , to: 'staticpages#help' 
+get '/contact'  , to: 'staticpages#contact'
+get '/'         , to: 'staticpages#home'
+root              to: 'staticpages#home'
 #get '/Login' , to: 'staticpages/Login'
-root to: 'staticpages#home'
+
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
