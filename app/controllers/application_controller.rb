@@ -5,4 +5,5 @@ class ApplicationController < ActionController::Base
   def my_app
   	render html: " Hey!!! welcome to this app"
   end
+  include SessionsHelper
 end
