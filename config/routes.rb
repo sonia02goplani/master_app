@@ -1,10 +1,13 @@
 Rails.application.routes.draw do
 get '/signup'   , to: 'users#new'
+post '/signup'  , to:  'users#create'
 get '/about'    , to: 'staticpages#about'
 get '/help'     , to: 'staticpages#help' 
 get '/contact'  , to: 'staticpages#contact'
 get '/'         , to: 'staticpages#home'
 root              to: 'staticpages#home'
+resources :users
+
 #get '/Login' , to: 'staticpages/Login'
 
 
