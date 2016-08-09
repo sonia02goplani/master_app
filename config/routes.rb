@@ -2,7 +2,7 @@ Rails.application.routes.draw do
   get 'sessions/new'
 
 get '/signup'   , to: 'users#new'
-post '/signup'  , to:  'users#create'
+post '/signup'  , to: 'users#create'
 get '/about'    , to: 'staticpages#about'
 get '/help'     , to: 'staticpages#help' 
 get '/contact'  , to: 'staticpages#contact'
