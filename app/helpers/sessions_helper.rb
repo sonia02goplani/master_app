@@ -15,6 +15,10 @@ def forget(user)
 	cookies.permanent.signed[:user_id]=nil
 	cookies[:remember_token]=nil
 end	
+# returns true if given user is current user
+def current_user?(user)
+	@current_user=user
+end
 def current_user
 	if(user_id=session[:user_id])
 			@current_user ||=User.find_by(id: user_id)
